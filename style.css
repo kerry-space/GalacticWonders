@@ -1,38 +1,27 @@
 
-body{
+/*====================================================================================
+=            Section  whole body  (*)      =
+=============================================*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
   color: white;
   font-family: sans-serif;
-  
-  
-}
-
-h1{
-  color: black;
-  font-size: 48px;
+ 
+  margin: 0px auto;
 
 
 }
 
-.site-title{
-  box-shadow: 0 0 20px 5px #111;
-  border-radius: 14px;
-}
-
-.side-img:hover{
-  transform: translateY(-5px);
+img:hover{
+  transition: 200ms ease;
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
-.main-img{
-
-  height:600px;
-  border-radius: 25px;
-
-}
-
-footer{
-  color:black;
-}
 
 li:hover{
   width : 70px;
@@ -42,8 +31,40 @@ li:hover{
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
-.middle-section{
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+h1{
+  color: black;
+  font-size: 48px;
+
+
+}
+
+/*====================================================================================
+=            Section  navbar            =
+=============================================*/
+
+.navbar{
+  width: auto;
+}
+
+.site-title{
+  box-shadow: 0 0 20px 5px #111;
+  border-radius: 14px;
+}
+
+.navbar-toggler{
+  background-color: white;
+}
+
+
+
+/*=============================================
+=            Section  body-conatiner            =
+=============================================*/
+
+.body-container{
+  width: auto;
+  margin:0px;
 }
 
 .navbar-brand:hover{
@@ -54,6 +75,77 @@ li:hover{
   transition: 200ms ease;
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
+
+
+/*====================================================================================
+ = Section  body-conatiner  Section  body-column          
+
+/*=============================================
+=            Section  body-upper            =
+=============================================*/
+
+.title-img{
+
+  height:auto;
+  border-radius: 25px;
+
+}
+
+
+
+
+
+
+/*=============================================
+=            Section  body-middle            =
+=============================================*/
+
+
+.middle-section{
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/*=============================================
+=            Section  body-down            =
+=============================================*/
+
+.card{
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+  padding: 200px;
+}
+
+.card-1 > img {
+ height: 278px;
+}
+
+.btn:hover{
+
+  width : 180px;
+  
+  background-color: #bd1111;
+  transform: translateY(5px);
+
+
+  transition: 200ms ease;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+/*====================================================================================
+=            side-section            =
+=============================================*/
+
+.side-img:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
 
 .side-section{
   display: flex;
@@ -81,48 +173,35 @@ li:hover{
 }
 
 
-img:hover{
-  transition: 200ms ease;
-  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
-}
+/*====================================================================================
+=            Section  footer          =
+=============================================*/
 
-.card{
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
-  padding: 200px;
-}
-
-.card-1 > img {
- height: 278px;
-}
-
-.btn:hover{
-
-  width : 180px;
-  
-  background-color: #bd1111;
-  transform: translateY(5px);
-
-
-  transition: 200ms ease;
-  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+footer{
+  color:black;
 }
 
 
 
-@media screen and (max-width:812px)
+
+
+
+
+
+
+
+
+
+
+/*Section  Media Queries   responsivness */
+/*====================================================================================*/
+
+@media screen and (max-width:851px)
 {
-  .card-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-  }
 
-
-
-  .card-1{
-    margin-bottom: 30px;
-    
-  }
+  /*=============================================
+  =            Section  body-upper            =
+  =============================================*/
 
   .body-upper{
     display: flex;
@@ -134,12 +213,50 @@ img:hover{
     column-width: 0px;
   }
 
-  .body-bottom {
-    display: flex;
-    flex-direction: column;
-    column-width: 0px;
- 
+
+  .title-img{
+
+    height:auto;
+    border-radius: 25px;
   }
 
+  .body-upper > h1{
+    font-size: 28px;
+  }
 
+  /*=============================================
+  =            Section  body-down         =
+  =============================================*/
+
+ 
+
+  .body-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+    
+  }
+
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+   
+   
+  }
+
+  .card-1{
+    margin-bottom: 30px;
+   
+   
+  }
+
+}
+
+
+
+@media screen and (min-width:768px){
+ 
 }
