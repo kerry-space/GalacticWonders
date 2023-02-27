@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.png" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+    <title>GalacticWonders</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="navbar navbar-expand-md bg-dark">
+        <div class="container-fluid text-light">
+          <a class="navbar-brand text-light site-title" href="./index.html"
+            >GalacticWonders</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light">About</a>
+              </li>
+            </ul>
+
+            <div class="">
+              <ul class="navbar-nav">
+                <li class="nav-item justify-content-end">
+                  <a href="" class="nav-link text-light">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     
+        <form class="row g-6 justify-content-center ">
+          <fieldset class="p-5 align-items-center w-75 p-3">
+            <legend class="text-black text-center  ">Login to GalacticWonders</legend>
+            <div class="col-auto pt-5 login-container">
+              <label for="staticEmail2 " class="text-dark mb-2">Email</label>
+              <input
+                type="text"
+                class="form-control "
+                id="staticEmail2"
+                value="email@example.com"
+              />
+              <label for="inputPassword2" class="text-dark mt-2"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control mt-2"
+                id="inputPassword2"
+                placeholder="Password"
+              />
+            </div>
+            <div class="col-auto mt-4 login-btn-container">
+              <button type="submit" class="btn btn-primary mb-3 login-button">
+               Login
+              </button>
+            </div>
+          </fieldset>
+        </form>
+     
+    </main>
+  </body>
+</html>
